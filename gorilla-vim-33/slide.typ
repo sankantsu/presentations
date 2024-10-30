@@ -16,7 +16,7 @@
   aspect-ratio: "16-9",
   footer-progress: false,
   config-info(
-    title: [画像の diff を NeoVim で表示する],
+    title: [画像の diff を Neovim で表示する],
     institution: [2024/10/30 ゴリラ.vim \#33],  // wrong markup, but I want to 
                                                // put this text below the title line
   ),
@@ -132,7 +132,7 @@ command = "/path/to/git_diff_image"  # カスタムの diff コマンド
 - あとは `GinDiff` に画像ビューを統合できたら良さそう!
   - テキストの diff の流れの中に画像の diff も出せるとうれしい
 
-== 3. NeoVim の中に画像表示
+== 3. Neovim の中に画像表示
 
 #slide[
 - 端末に生のエスケープシーケンス (e.g. Sixel) 吐けば画像は出る。
@@ -197,7 +197,7 @@ return require("image/utils/document").create_document_integration({
   - カスタム diff driver で diff の出力をいじる
   - image.nvim の integration を書くことで手軽に画像表示対応できる
 - 今後の課題
-  - diff 画像生成機能を NeoVim プラグイン側に移せれば diff driver 不要にできる？
+  - diff 画像生成機能を Neovim プラグイン側に移せれば diff driver 不要にできる？
   - `image.nvim` のSixel 対応
   - Wezterm の Kitty Graphics Protocol サポート強化
 
